@@ -14,9 +14,6 @@ class BlogStore extends EventEmitter {
   getAll() {
     return this.blogs;
   }
-  ajaxBlogs() {
-    
-  }
 
   handleActions(action) {
     switch (action.type) {

@@ -9,10 +9,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "classnames": "^2.2.3",
     "date-and-time": "^0.3.0",
     "es6-promise": "^3.1.2",
     "flux": "^2.1.1",
     "jquery": "^2.2.2",
+    "normalize": "^0.3.1",
+    "normalize.less": "^1.0.0",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
     "react-router": "^2.0.1"
@@ -27,12 +30,17 @@
     "babel-preset-react": "^6.3.13",
     "babel-preset-stage-0": "^6.3.13",
     "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",
     "gulp-concat": "^2.6.0",
     "gulp-connect": "^3.2.0",
     "gulp-less": "^3.0.5",
     "gulp-rename": "^1.2.2",
+    "less": "^2.6.1",
+    "less-loader": "^2.2.2",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.14",
     "webpack-stream": "^3.1.0"
   }
 }

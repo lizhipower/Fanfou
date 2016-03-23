@@ -6,7 +6,7 @@
 
     <servlet>
         <servlet-name>getBlogs</servlet-name>
-        <servlet-class>douban.servlet.Blogs</servlet-class>
+        <servlet-class>fanfou.servlet.Blogs</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>getBlogs</servlet-name>

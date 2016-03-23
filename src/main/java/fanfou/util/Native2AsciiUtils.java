@@ -1,4 +1,4 @@
-package douban.util;
+package fanfou.util;
 
 /**
  * Created by ZhiLI on 2016/3/22.

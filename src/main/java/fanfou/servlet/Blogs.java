@@ -1,6 +1,6 @@
-package douban.servlet;
+package fanfou.servlet;
 
-import douban.util.GetBlogs;
+import fanfou.util.GetBlogs;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -8,7 +8,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.net.URLDecoder;
 
 /**
  * Created by ZhiLI on 2016/3/22.
@@ -22,10 +21,13 @@ public class Blogs extends HttpServlet {
 
 //        double num = Double.parseDouble(number1);   //解析成double格式
 //        System.out.println("000");
-        GetBlogs getBlogs = new GetBlogs();
-        String blogsStr = getBlogs.getBlogs();
+        String fanfouBlogUrl = "http://api.fanfou.com/statuses/user_timeline.json?id=默涵井夜";
+
+        GetBlogs gb = new GetBlogs(fanfouBlogUrl);
+        String blogs = gb.getBlogs();
+
         PrintWriter out = response.getWriter();
-        out.print(blogsStr);       //将后台数据传递到页面
+        out.print(blogs);       //将后台数据传递到页面
         out.flush();
         out.close();
 

@@ -7,9 +7,7 @@ import Nav from '../components/Layout/Nav';
 import Footer from '../components/Layout/Footer';
 
 export default class Layout extends React.Component {
-  static propTypes = {
-    // children: React.PropTypes.node
-  };
+
 
   constructor() {
     super();
